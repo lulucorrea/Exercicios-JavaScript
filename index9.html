@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Atividade 9 </title>
+</head>
+<body>
+    <script>
+        var num1;
+        var num2;
+        var num3;
+        var num4;
+            
+        num1=prompt("Digite o primeiro número:");
+        num1=parseFloat(num1);
+
+        num2=prompt("Digite o segundo número: \n (Deve ser  maior que o anterior) ");
+        num2=parseFloat(num2);
+
+        num3=prompt("Digite o terceiro número: \n (Deve ser  maior que o anterior) ");
+        num3=parseFloat(num3);
+
+        num4=prompt("Digite outro primeiro número:");
+        num4=parseFloat(num4);
+
+        if (num1 >= num2 && num1 >= num3) {
+            if (num2 >= num3) {
+                alert(num1 + ", " + num2 + ", " + num3);
+            } 
+            else {
+                alert(num1 + ", " + num3 + ", " + num2);
+            }
+        } 
+        else if (num2 >= num1 && num2 >= num3) {
+            if (num1 >= num3) {
+                alert(num2 + ", " + num1 + ", " + num3);
+            } 
+            else {
+                alert(num2 + ", " + num3 + ", " + num1);
+            }
+        } 
+        else {
+            if (num1 >= num2) {
+                alert(num3 + ", " + num1 + ", " + num2);
+            } 
+            else {
+                alert(num3 + ", " + num2 + ", " + num1);
+            }
+        }
+
+    </script>
+
+    <p> 
+        9. Elabore um algoritmo que leia três números, obrigatoriamente em ordem crescente, e um quarto número que não siga esta regra. 
+        <br>Mostre, em seguida, os quatro números em ordem decrescente.
+    </p>
+
+    <button><a href="./index10.html"> Próxima atividade </a></button>
+
+    <br>
+    <br>
+    <button><a href="./index.html"> Pagina Inicial</a></button>
+
+</body>
+</html>
